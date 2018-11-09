@@ -14,11 +14,19 @@ The goal of this assignment was to analyze the quanity and quality of politicial
 
 2 external data sources were used:
 
-    1. Article data: https://figshare.com/articles/Untitled_Item/5513449 
+1. Article data: https://figshare.com/articles/Untitled_Item/5513449 
     This data contains information about the various political pages on Wikipedia, the country it realtes to and a revision_id
 
-    2. Population data: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0 
+2. Population data: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0 
     This data contains information about geograhical entities (mostly countries) and their populations.
+
+## Other Resources
+
+To determine the quality of articles, the Wikimedia ORES API was used (https://www.mediawiki.org/wiki/ORES).
+
+It gives a measure of probability as to which class the article would best fit in. While complete information cane be obtained on the website,
+for the purpose of this assignment articles predicted with a high degree of probability to belong to FA or GA classes are considered high
+quality articles.
 
 ## Output
 
@@ -35,57 +43,39 @@ It has the following columns:
 | population | The population of the country |
 
 
+This csv file is used for further analysis as shown in the ipython notebook (Data_512_A2.ipynb).
 
-Wikimedia ORES API: https://www.mediawiki.org/wiki/ORES 
-Provides a prediction for the article's quality class
-Library versions
-Python: 3.6.2
+## Library versions
+
+Python: 3.6.5
 requests: 2.18.4
-json: 2.6.0
-pandas: 0.22.0
-matplotlib: 2.0.2
-Output
-The data from the three sources listed about is joined into a 
-single dataframe, and is stored in the data-processed folder.
+pandas: 0.23.0
+matplotlib: 2.2.2
+numpy: 1.14.3
 
-The final dataframe contains following columns: 
-page    country    rev_id    population    predictions
+## Reflections
 
-Tables
-10 highest-ranked countries: Ratio of politician articles to country population
+### Expected Bias in Data
+
+I expected developed countries whose primary language is English to have both high percentage of articles per population 
+as well as a bigger percentage of high quality articles. I expected this because developed countries would have a high
+internet coverage and relatively lower populations than developing countries. Also since their primary language is English, 
+it made sense to me to expect a higher quanity of articles.
+
+### Results and Conclusions
+
+The highest article per capita ratios came almsot solely from countries with very small populations, which was expected. SImilarly 
+India and China had the lowest article per capita ratio, which was also expected due to the large populations. But apart from these two, 
+the other countries were those with very small populations again like Uzbekistan, Zambia, North Korea etc. Again this could be explained
+by the poor internet access in most of these countries. So the obvious question is since only English articles are being considered, is this
+a fair representation because many countries have other official languages which is more accesible and used by the population.
+
+There are numerous countries which do not have any high quality articles which was unexpected. Also, I was not able to find any of 
+the countries matching my initial expectations (European and North American countries) in the top 10 lists. Berlin was a standout for 
+me because I was under the impression they are quite particular about not talking in English.
 
 
-### 10 lowest-ranked countries: ratio of article quality to article count
 
-
-### 10 lowest-ranked countries: ratio of article quality to article count
-
-
-### 10 highest-ranked countries: ratio of article quality to article count
-
-
-Reflections
-What biases did you expect to find in the data, and why?
-I expected to see higer quality articles in english speaking regions given that 
-most Wikipedia are in English. I also expected to see the quality of article being 
-proportional to the economic development of a country, given that access to internet 
-could be a barrier in some regions.
-
-What are the results?
-The list of countries with least number of articles per capita isn't very surprising 
-given the large population of China and India. Also, the list of countries with most 
-articles per captia a highly skewed towards very small countries.
-
-The tables relating to the quality of articles is more surprising, however. There are a lot 
-of countries which do not have any article classified as 'good'. The countries with a high 
-proportion of good quality articles are also not the ones I'd expected to see. (USA, countries 
-in europe)
-
-What theories do you have about why the results are what they are?
-The 'ratio of articles to population' tables are highly skewed, most likely due the effect of 
-population on the ratio. In the second set of tables where we compare the quality to the count of articles, it looks like 
-the regions with low total article counts domniate the top-10 list (few articles, but well 
-written, resulting in a high ratio)
 
 License
 This assignment is released under the MIT license.
