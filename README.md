@@ -1,23 +1,41 @@
 # data-512-a2
 DATA 512 A2
 
-Bias in Data
+## Bias in Data
 
 Name: Vamsy Atluri
 Date: 8 Nov 2018
 
-Goal
+## Goal
 
 The goal of this assignment was to analyze the quanity and quality of politicial articles on Wikipedia on a geographical basis, and in the process try to understand bias, its causes and consequences.
 
-Data sources
+## Data sources
 
 2 external data sources were used:
 
-1. Article data: https://figshare.com/articles/Untitled_Item/5513449 
-This data contains information about the various political pages on Wikipedia, the country it realtes to and a revision_id
-Population data: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0 
-Contains Greography, and Population
+    1. Article data: https://figshare.com/articles/Untitled_Item/5513449 
+    This data contains information about the various political pages on Wikipedia, the country it realtes to and a revision_id
+
+    2. Population data: https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0 
+    This data contains information about geograhical entities (mostly countries) and their populations.
+
+## Output
+
+One of the outputs of the exercise was a csv file ('final_data.csv) that combines the two inputs along with a Article Quality Score.
+
+It has the following columns:
+
+| Column | Description |
+|--------|-------------|
+| country | Country name |
+| article_name | The name of the article |
+| revision_id | Revision_id of the article from Wikipedia |
+| article_quality | Quality of the article as determined by the ORES API |
+| population | The population of the country |
+
+
+
 Wikimedia ORES API: https://www.mediawiki.org/wiki/ORES 
 Provides a prediction for the article's quality class
 Library versions
