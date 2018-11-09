@@ -90,4 +90,4 @@ The data located on figshare is licensed under CC BY 4.0 (https://creativecommon
 
 The license for population data on dropbox is unclear.
 
-The ORES API is developed by the Wikimedia foundation and as per their site(https://blog.wikimedia.org/2015/11/30/artificial-intelligence-x-ray-specs/) the revision scores are released under a Creative Commons Zero license (https://creativecommons.org/publicdomain/zero/1.0/).
+The ORES API is developed by the Wikimedia foundation and as per their site (https://blog.wikimedia.org/2015/11/30/artificial-intelligence-x-ray-specs/) the revision scores are released under a Creative Commons Zero license (https://creativecommons.org/publicdomain/zero/1.0/).
