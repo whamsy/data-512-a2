@@ -4,6 +4,7 @@ DATA 512 A2
 ## Bias in Data
 
 Name: Vamsy Atluri
+
 Date: 8 Nov 2018
 
 ## Goal
@@ -74,12 +75,18 @@ There are numerous countries which do not have any high quality articles which w
 the countries matching my initial expectations (European and North American countries) in the top 10 lists. Berlin was a standout for 
 me because I was under the impression they are quite particular about not talking in English.
 
+Overall, due to the lack of consideration for regional languages and because the data is confined to people with active internet access,
+I believe the data is very biased and thus no viable conclusions can be confidently drawn from it with respect to its reflection on the real 
+world. Also the ORES API is a wild card which Ihas been trusted to give the correct quality indicators but the way AI is being programmed
+for this purpose could also be having an effect. For e.g if there are more grammatical errors in an article from a non-native English speaker
+is it categorized as poor? Or is the score dynamic and can be improved on edits?
 
 
+## License
 
-License
 This assignment is released under the MIT license.
 
-The data located on figshare is licensed under CC. 
-The license for population data on dropbox is unknown. 
-The ORES API also licensed under CC.
+The data located on figshare is licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) 
+The license for population data on dropbox is unclear.
+The ORES API is developed by the Wikimedia foundation and from their site the revision scores are released under a Creative Commons Zero
+license (https://creativecommons.org/publicdomain/zero/1.0/).
