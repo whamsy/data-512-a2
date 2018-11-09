@@ -82,7 +82,7 @@ for this purpose could also be having an effect. For e.g if there are more gramm
 is it categorized as poor? Or is the score dynamic and can be improved on edits?
 
 
-## License
+## Licensing
 
 This assignment is released under the MIT license.
 
